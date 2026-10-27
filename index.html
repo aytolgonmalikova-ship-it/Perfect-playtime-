@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Perfect Playtime — Your Dream Baby Shop</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Titan+One&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ============ TOP BAR ============ -->
+  <div class="topbar">
+    <div class="container topbar__inner">
+      <div class="topbar__left">
+        <div class="location" id="location">
+          <button class="location__btn" id="locationBtn" type="button">
+            <svg viewBox="0 0 24 24" width="13" height="13"><path fill="currentColor" d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7Zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5Z"/></svg>
+            <span id="locationText">Choose your location</span>
+          </button>
+          <ul class="location__list" id="locationList">
+            <li>New York</li><li>Los Angeles</li><li>Chicago</li><li>Bishkek</li><li>London</li>
+          </ul>
+        </div>
+        <a class="topbar__phone" href="tel:0123457896">
+          <svg viewBox="0 0 24 24" width="13" height="13"><path fill="currentColor" d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1l-2.3 2.2Z"/></svg>
+          0123457896
+        </a>
+      </div>
+      <div class="topbar__social">
+        <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M14 8h3V4h-3c-2.8 0-4 1.8-4 4.3V10H7v4h3v8h4v-8h3l1-4h-4V8.6c0-.4.3-.6.6-.6Z"/></svg></a>
+        <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="2.2"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2.2"/><circle cx="17.5" cy="6.5" r="1.3" fill="currentColor"/></svg></a>
+        <a href="#" aria-label="TikTok"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M16.6 3c.3 2.4 1.7 3.9 4 4v3a7 7 0 0 1-4-1.3v6.1A6 6 0 1 1 10.6 9v3.1a3 3 0 1 0 2.1 2.8V3h3.9Z"/></svg></a>
+        <a href="#" aria-label="Flickr"><svg viewBox="0 0 24 24"><circle cx="7" cy="12" r="4" fill="currentColor"/><circle cx="17" cy="12" r="4" fill="currentColor"/></svg></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ HEADER ============ -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <button class="burger" id="burger" aria-label="Меню"><span></span><span></span><span></span></button>
+      <nav class="nav" id="nav">
+        <a href="#home" class="nav__link active">Home</a>
+        <a href="#about" class="nav__link">About Us</a>
+        <a href="#shop" class="nav__link">Shop</a>
+        <a href="#contact" class="nav__link">Contact</a>
+      </nav>
+      <a href="#home" class="logo">
+        <svg class="logo__crown" viewBox="0 0 40 26"><path fill="#F6C945" d="M3 8l9 6 8-12 8 12 9-6-4 16H7z"/><circle cx="3" cy="7" r="2.6" fill="#F6C945"/><circle cx="37" cy="7" r="2.6" fill="#F6C945"/><circle cx="20" cy="3" r="2.6" fill="#F6C945"/></svg>
+        <span>Perfect<br />Playtime</span>
+      </a>
+      <div class="header__actions">
+        <a href="#" class="header__link" data-modal="login">Log In</a>
+        <a href="#" class="header__link" data-modal="register">Register</a>
+        <button class="cart-btn" id="cartBtn" type="button">
+          <svg viewBox="0 0 24 24" width="16" height="16"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M2 3h3l2.4 11.2a2 2 0 0 0 2 1.6h8.2a2 2 0 0 0 2-1.5L21 7H6"/><circle cx="10" cy="20" r="1.4" fill="currentColor"/><circle cx="17" cy="20" r="1.4" fill="currentColor"/></svg>
+          Cart <span class="cart-count" id="cartCount">0</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="home">
+      <div class="container hero__inner">
+        <div class="hero__content reveal">
+          <svg class="deco-star hero__star1" viewBox="0 0 24 24"><path d="M12 2l2.9 6.6 7.1.6-5.4 4.7 1.6 7L12 17.3 5.8 21l1.6-7L2 9.2l7.1-.6z"/></svg>
+          <svg class="deco-star deco-star--yellow hero__star2" viewBox="0 0 24 24"><path d="M12 2l2.9 6.6 7.1.6-5.4 4.7 1.6 7L12 17.3 5.8 21l1.6-7L2 9.2l7.1-.6z"/></svg>
+          <h1 class="title title--xl" id="heroTitle">Your Dream<br />Baby Shop</h1>
+          <a href="#shop" class="btn">Order Now</a>
+        </div>
+
+        <div class="hero__media reveal">
+          <div class="hero__slides" id="heroSlides">
+            <img src="assets/img/hero-room.jpg" class="active" alt="Детская комната" />
+            <img src="assets/img/banner-room.jpg" alt="Игровая комната" />
+            <img src="assets/img/baby-bed.jpg" alt="Малыш на кровати" />
+          </div>
+          <div class="hero__notch">
+            <button class="arrow arrow--blue" id="heroPrev" aria-label="Назад"><svg viewBox="0 0 24 24"><path d="M15 6l-6 6 6 6"/></svg></button>
+            <button class="arrow arrow--coral" id="heroNext" aria-label="Вперёд"><svg viewBox="0 0 24 24"><path d="M9 6l6 6-6 6"/></svg></button>
+          </div>
+          <div class="hero__dots" id="heroDots"></div>
+          <!-- decorations -->
+          <svg class="hero__moon" viewBox="0 0 60 60"><path fill="#F7D8D2" d="M38 4a26 26 0 1 0 18 40A22 22 0 0 1 38 4Z"/></svg>
+          <svg class="deco-star deco-star--blue hero__star3" viewBox="0 0 24 24"><path d="M12 2l2.9 6.6 7.1.6-5.4 4.7 1.6 7L12 17.3 5.8 21l1.6-7L2 9.2l7.1-.6z"/></svg>
+          <svg class="deco-star deco-star--yellow hero__star4" viewBox="0 0 24 24"><path d="M12 2l2.9 6.6 7.1.6-5.4 4.7 1.6 7L12 17.3 5.8 21l1.6-7L2 9.2l7.1-.6z"/></svg>
+          <svg class="deco-star deco-star--yellow hero__star5" viewBox="0 0 24 24"><path d="M12 2l2.9 6.6 7.1.6-5.4 4.7 1.6 7L12 17.3 5.8 21l1.6-7L2 9.2l7.1-.6z"/></svg>
+          <svg class="deco-star hero__star6" viewBox="0 0 24 24"><path d="M12 2l2.9 6.6 7.1.6-5.4 4.7 1.6 7L12 17.3 5.8 21l1.6-7L2 9.2l7.1-.6z"/></svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ MARQUEE ============ -->
+    <div class="marquee">
+      <div class="marquee__track" id="marqueeTrack">
+        <!-- items are cloned by JS for an endless loop -->
+        <div class="marquee__group">
+          <span class="marquee__item"><i class="crown"></i>New Product</span>
+          <span class="marquee__item"><i class="crown"></i>Easy To Assemble</span>
+          <span class="marquee__item"><i class="crown"></i>Beautiful Design</span>
+          <span class="marquee__item"><i class="crown"></i>High Quality</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="about" id="about">
+      <div class="container about__inner">
+        <div class="about__content reveal">
+          <i class="crown crown--lg"></i>
+          <h2 class="title title--lg">Begin Your Baby’s<br />Journey With Us.</h2>
+          <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In commodo enim massa semper lacinia. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In commodo enim sit amet.</p>
+          <a href="#shop" class="btn">Explore</a>
+          <svg class="deco-star about__star1" viewBox="0 0 24 24"><path d="M12 2l2.9 6.6 7.1.6-5.4 4.7 1.6 7L12 17.3 5.8 21l1.6-7L2 9.2l7.1-.6z"/></svg>
+          <svg class="deco-star deco-star--yellow about__star2" viewBox="0 0 24 24"><path d="M12 2l2.9 6.6 7.1.6-5.4 4.7 1.6 7L12 17.3 5.8 21l1.6-7L2 9.2l7.1-.6z"/></svg>
+        </div>
+        <div class="about__media reveal">
+          <img src="assets/img/baby-bed.jpg" alt="Малыш на кровати" />
+          <div class="sun" aria-hidden="true">
+            <svg viewBox="0 0 120 90">
+              <path fill="#fff" d="M18 78a16 16 0 0 1 4-31 22 22 0 0 1 41-6 18 18 0 0 1 33 10 14 14 0 0 1 2 27z"/>
+              <g fill="#F6C945"><circle cx="62" cy="40" r="20"/>
+                <g stroke="#F6C945" stroke-width="3.2" stroke-linecap="round"><path d="M62 8v7M62 65v7M30 40h7M87 40h7M39 17l5 5M80 58l5 5M85 17l-5 5M44 58l-5 5"/></g></g>
+              <g fill="none" stroke="#C9821A" stroke-width="2" stroke-linecap="round"><path d="M53 37q3 3 6 0M65 37q3 3 6 0M56 45q6 6 12 0"/></g>
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      <!-- categories carousel -->
+      <div class="container cats">
+        <button class="arrow arrow--blue" id="catPrev" aria-label="Назад"><svg viewBox="0 0 24 24"><path d="M15 6l-6 6 6 6"/></svg></button>
+        <div class="cats__viewport">
+          <div class="cats__track" id="catTrack">
+            <a href="#shop" class="cat" data-filter="furniture"><img src="assets/img/p-crib.jpg" alt="" /><span>Furniture</span></a>
+            <a href="#shop" class="cat" data-filter="toys"><img src="assets/img/g1.jpg" alt="" /><span>Soft Toys</span></a>
+            <a href="#shop" class="cat" data-filter="all"><img src="assets/img/g3.jpg" alt="" /><span>Decor</span></a>
+            <a href="#shop" class="cat" data-filter="clothes"><img src="assets/img/p-combo.jpg" alt="" /><span>Clothes</span></a>
+            <a href="#shop" class="cat" data-filter="care"><img src="assets/img/p-dummy.jpg" alt="" /><span>Care</span></a>
+            <a href="#shop" class="cat" data-filter="toys"><img src="assets/img/g4.jpg" alt="" /><span>Plush</span></a>
+            <a href="#shop" class="cat" data-filter="toys"><img src="assets/img/g2.jpg" alt="" /><span>Wooden Toys</span></a>
+            <a href="#shop" class="cat" data-filter="transport"><img src="assets/img/p-train.jpg" alt="" /><span>Transport</span></a>
+            <a href="#shop" class="cat" data-filter="transport"><img src="assets/img/p-carriage.jpg" alt="" /><span>Strollers</span></a>
+            <a href="#shop" class="cat" data-filter="toys"><img src="assets/img/p-horse.jpg" alt="" /><span>Rocking</span></a>
+          </div>
+        </div>
+        <button class="arrow arrow--coral" id="catNext" aria-label="Вперёд"><svg viewBox="0 0 24 24"><path d="M9 6l6 6-6 6"/></svg></button>
+      </div>
+    </section>
+
+    <!-- ============ BEST SELLER ============ -->
+    <section class="best">
+      <div class="container">
+        <h2 class="title title--md title--center reveal">Best Seller</h2>
+        <div class="best__inner reveal">
+          <button class="arrow arrow--blue best__prev" id="bestPrev" aria-label="Назад"><svg viewBox="0 0 24 24"><path d="M15 6l-6 6 6 6"/></svg></button>
+
+          <div class="best__left">
+            <svg class="rainbow" viewBox="0 0 160 110" aria-hidden="true">
+              <path d="M18 92a62 62 0 0 1 124 0" fill="none" stroke="#F6C945" stroke-width="16" stroke-linecap="round"/>
+              <path d="M38 92a42 42 0 0 1 84 0" fill="none" stroke="#F2937E" stroke-width="16" stroke-linecap="round"/>
+              <path d="M58 92a22 22 0 0 1 44 0" fill="none" stroke="#A9D9E8" stroke-width="14" stroke-linecap="round"/>
+              <path fill="#F2937E" d="M80 66c-4-4-9-1-7 3 1 3 7 7 7 7s6-4 7-7c2-4-3-7-7-3Z"/>
+              <path fill="#fff" d="M2 100a12 12 0 0 1 18-16 14 14 0 0 1 26 4 10 10 0 0 1 4 18H8a8 8 0 0 1-6-6Zm110 0a12 12 0 0 1 18-16 14 14 0 0 1 26 4 10 10 0 0 1 2 18h-40a8 8 0 0 1-6-6Z"/>
+            </svg>
+            <div class="best__card">
+              <img src="assets/img/chair.png" id="bestImg" alt="Wooden Baby Chair" />
+              <div class="best__label">
+                <span class="best__name" id="bestName">Wooden<br />Baby Chair</span>
+                <div class="best__right">
+                  <span class="best__price" id="bestPrice">$240.00</span>
+                  <button class="best__add" id="bestAdd">Add to cart</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="best__photo">
+            <img src="assets/img/baby-highchair.jpg" id="bestPhoto" alt="Малыш на стульчике" />
+          </div>
+
+          <button class="arrow arrow--coral best__next" id="bestNext" aria-label="Вперёд"><svg viewBox="0 0 24 24"><path d="M9 6l6 6-6 6"/></svg></button>
+          <svg class="deco-star deco-star--yellow best__star1" viewBox="0 0 24 24"><path d="M12 2l2.9 6.6 7.1.6-5.4 4.7 1.6 7L12 17.3 5.8 21l1.6-7L2 9.2l7.1-.6z"/></svg>
+          <svg class="deco-star deco-star--blue best__star2" viewBox="0 0 24 24"><path d="M12 2l2.9 6.6 7.1.6-5.4 4.7 1.6 7L12 17.3 5.8 21l1.6-7L2 9.2l7.1-.6z"/></svg>
+          <svg class="deco-star best__star3" viewBox="0 0 24 24"><path d="M12 2l2.9 6.6 7.1.6-5.4 4.7 1.6 7L12 17.3 5.8 21l1.6-7L2 9.2l7.1-.6z"/></svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ BANNER ============ -->
+    <section class="banner">
+      <div class="banner__content reveal">
+        <h2 class="title title--lg title--white">Your Dream<br />Baby Shop</h2>
+        <a href="#shop" class="btn btn--outline">Order Now</a>
+      </div>
+    </section>
+
+    <!-- ============ STEPS ============ -->
+    <section class="steps">
+      <div class="container">
+        <h2 class="title title--md title--center reveal">We Bring Magic In Your<br />Homes With Our Assortment</h2>
+        <div class="steps__grid">
+          <div class="step reveal">
+            <div class="step__num"><span>1</span></div>
+            <h3 class="step__title">Start Browsing And<br />Go Be Inspired</h3>
+            <p class="step__text">Risus quis varius quam quisque diam a sed velit dignissim sodales ut eu gravida quis.</p>
+          </div>
+          <div class="step reveal">
+            <div class="step__num"><span>2</span></div>
+            <h3 class="step__title">See And Explore With<br />Layout Details</h3>
+            <p class="step__text">Risus quis varius quam quisque diam a sed velit dignissim sodales ut eu gravida quis.</p>
+          </div>
+          <div class="step reveal">
+            <div class="step__num"><span>3</span></div>
+            <h3 class="step__title">Fully Responsive And<br />Mobile Ready</h3>
+            <p class="step__text">Risus quis varius quam quisque diam a sed velit dignissim sodales ut eu gravida quis.</p>
+          </div>
+          <div class="step reveal">
+            <div class="step__num"><span>4</span></div>
+            <h3 class="step__title">Purchase And Your<br />Fully Equipped</h3>
+            <p class="step__text">Risus quis varius quam quisque diam a sed velit dignissim sodales ut eu gravida quis.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ NEW ARRIVALS ============ -->
+    <section class="arrivals" id="shop">
+      <div class="container">
+        <svg class="deco-star arrivals__star1" viewBox="0 0 24 24"><path d="M12 2l2.9 6.6 7.1.6-5.4 4.7 1.6 7L12 17.3 5.8 21l1.6-7L2 9.2l7.1-.6z"/></svg>
+        <svg class="deco-star deco-star--yellow arrivals__star2" viewBox="0 0 24 24"><path d="M12 2l2.9 6.6 7.1.6-5.4 4.7 1.6 7L12 17.3 5.8 21l1.6-7L2 9.2l7.1-.6z"/></svg>
+        <svg class="deco-star deco-star--blue arrivals__star3" viewBox="0 0 24 24"><path d="M12 2l2.9 6.6 7.1.6-5.4 4.7 1.6 7L12 17.3 5.8 21l1.6-7L2 9.2l7.1-.6z"/></svg>
+
+        <div class="arrivals__head reveal">
+          <h2 class="title title--md">New Arrivals</h2>
+          <button class="btn btn--sm" id="exploreAll">Explore</button>
+        </div>
+
+        <div class="filters reveal" id="filters">
+          <button class="filter active" data-filter="all">All</button>
+          <button class="filter" data-filter="transport">Transport</button>
+          <button class="filter" data-filter="furniture">Furniture</button>
+          <button class="filter" data-filter="clothes">Clothes</button>
+          <button class="filter" data-filter="toys">Toys</button>
+          <button class="filter" data-filter="care">Care</button>
+        </div>
+
+        <div class="products" id="products"><!-- rendered by JS --></div>
+
+        <svg class="arrivals__arrow" viewBox="0 0 60 70" aria-hidden="true">
+          <path d="M50 4C60 30 46 62 14 58" fill="none" stroke="#F2B08F" stroke-width="2.2" stroke-linecap="round"/>
+          <path d="M22 50l-9 8 10 6" fill="none" stroke="#F2B08F" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+    </section>
+
+    <!-- ============ INFO ============ -->
+    <section class="info" id="contact">
+      <div class="container info__inner">
+        <div class="info__media reveal"><img src="assets/img/kids.jpg" alt="Дети играют" /></div>
+        <div class="info__content reveal">
+          <svg class="info__moon" viewBox="0 0 60 50" aria-hidden="true">
+            <path fill="#F7D8D2" d="M40 4a21 21 0 1 0 16 32A18 18 0 0 1 40 4Z"/>
+            <path fill="#A9D9E8" d="M12 8l1.8 4 4.4.4-3.3 2.9 1 4.3L12 17.3l-3.9 2.3 1-4.3L5.8 12.4l4.4-.4z"/>
+            <path fill="#F6C945" d="M18 26l1.2 2.7 3 .3-2.2 2 .6 2.9L18 32.4l-2.6 1.5.6-2.9-2.2-2 3-.3z"/>
+          </svg>
+          <h2 class="title title--lg">Everything A<br />Baby Needs</h2>
+          <ul class="info__list">
+            <li class="info__item">
+              <i class="dot"></i>
+              <div><p>Monday/Friday 9:00-23:00</p><p>Saturday 10:00-21:00</p><p class="open-status" id="openStatus"></p></div>
+            </li>
+            <li class="info__item">
+              <svg class="pin" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7Zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5Z"/></svg>
+              <div>
+                <p><a href="tel:+0123456789">+012-345-6789</a></p>
+                <p><a href="mailto:TheWildKingdom@contact.com">TheWildKingdom@contact.com</a></p>
+                <p>6689 Lorem ipsum street, Pellentesque, CA, USA</p>
+              </div>
+            </li>
+          </ul>
+          <button class="btn" data-modal="contact">Contact Us</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ GALLERY ============ -->
+    <div class="gallery">
+      <img src="assets/img/g1.jpg" alt="" /><img src="assets/img/g2.jpg" alt="" /><img src="assets/img/g3.jpg" alt="" /><img src="assets/img/g4.jpg" alt="" /><img src="assets/img/g5.jpg" alt="" />
+    </div>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__col">
+        <h4 class="footer__title">Sitemap</h4>
+        <nav class="footer__nav"><a href="#home">Home</a><a href="#about">About Us</a><a href="#shop">Shop</a><a href="#contact">Contact</a></nav>
+        <div class="footer__social">
+          <a href="#" aria-label="Twitter"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M22 5.9c-.7.3-1.5.5-2.4.6.9-.5 1.5-1.3 1.8-2.3-.8.5-1.7.8-2.6 1a4.1 4.1 0 0 0-7 3.7A11.6 11.6 0 0 1 3.4 4.7a4.1 4.1 0 0 0 1.3 5.5c-.7 0-1.3-.2-1.9-.5 0 2 1.4 3.7 3.3 4.1-.6.2-1.2.2-1.8.1.5 1.6 2 2.8 3.8 2.9A8.3 8.3 0 0 1 2 18.5 11.7 11.7 0 0 0 8.3 20c7.5 0 11.7-6.3 11.7-11.7v-.5c.8-.6 1.5-1.3 2-2Z"/></svg></a>
+          <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="2.2"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2.2"/><circle cx="17.5" cy="6.5" r="1.3" fill="currentColor"/></svg></a>
+          <a href="#" aria-label="TikTok"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M16.6 3c.3 2.4 1.7 3.9 4 4v3a7 7 0 0 1-4-1.3v6.1A6 6 0 1 1 10.6 9v3.1a3 3 0 1 0 2.1 2.8V3h3.9Z"/></svg></a>
+          <a href="#" aria-label="Flickr"><svg viewBox="0 0 24 24"><circle cx="7" cy="12" r="4" fill="currentColor"/><circle cx="17" cy="12" r="4" fill="currentColor"/></svg></a>
+        </div>
+      </div>
+
+      <div class="footer__col footer__col--center">
+        <a href="#home" class="logo logo--white">
+          <svg class="logo__crown" viewBox="0 0 40 26"><path fill="#fff" d="M3 8l9 6 8-12 8 12 9-6-4 16H7z"/><circle cx="3" cy="7" r="2.6" fill="#fff"/><circle cx="37" cy="7" r="2.6" fill="#fff"/><circle cx="20" cy="3" r="2.6" fill="#fff"/></svg>
+          <span>Perfect<br />Playtime</span>
+        </a>
+      </div>
+
+      <div class="footer__col">
+        <h4 class="footer__heading">Make Your Child’s<br />Wardrobe Brighter<br />With Us</h4>
+        <form class="subscribe" id="subscribe" novalidate>
+          <input type="email" placeholder="Enter email address" id="subEmail" />
+          <button type="submit">Subscribe</button>
+        </form>
+        <p class="subscribe__error" id="subError"></p>
+      </div>
+    </div>
+    <div class="container footer__bottom">Copyright ©<span id="year"></span> Perfect Playtime</div>
+  </footer>
+
+  <!-- ============ CART DRAWER ============ -->
+  <div class="overlay" id="overlay"></div>
+  <aside class="drawer" id="drawer" aria-label="Корзина">
+    <div class="drawer__head">
+      <h3 class="title title--sm">Your Cart</h3>
+      <button class="close" id="drawerClose" aria-label="Закрыть">&times;</button>
+    </div>
+    <div class="drawer__body" id="cartItems"></div>
+    <div class="drawer__foot">
+      <div class="drawer__total"><span>Total</span><strong id="cartTotal">$0.00</strong></div>
+      <button class="btn btn--block" id="checkoutBtn">Checkout</button>
+    </div>
+  </aside>
+
+  <!-- ============ MODAL ============ -->
+  <div class="modal" id="modal" role="dialog" aria-modal="true">
+    <div class="modal__box">
+      <button class="close modal__close" id="modalClose" aria-label="Закрыть">&times;</button>
+      <div id="modalContent"></div>
+    </div>
+  </div>
+
+  <!-- ============ TOAST + TO TOP ============ -->
+  <div class="toast" id="toast"></div>
+  <button class="to-top" id="toTop" aria-label="Наверх"><svg viewBox="0 0 24 24"><path d="M6 15l6-6 6 6"/></svg></button>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
